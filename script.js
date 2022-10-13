@@ -1,25 +1,4 @@
-const prato1 = document.querySelector("#prato1");
-const prato1Selected = document.querySelector("#prato1-selected");
-const prato2Selected = document.querySelector("#prato2-selected");
-const prato3Selected = document.querySelector("#prato3-selected");
-
-const bebida1 = document.querySelector("#bebida1");
-const bebida1Selected = document.querySelector("#bebida1-selected");
-const bebida2 = document.querySelector("#bebida2");
-const bebida2Selected = document.querySelector("#bebida2-selected");
-const bebida3 = document.querySelector("#bebida3");
-const bebida3Selected = document.querySelector("#bebida3-selected");
-
-const sobremesa1 = document.querySelector("#sobremesa1");
-const sobremesa1Selected = document.querySelector("#sobremesa1-selected");
-const sobremesa2 = document.querySelector("#sobremesa2");
-const sobremesa2Selected = document.querySelector("#sobremesa2-selected");
-const sobremesa3 = document.querySelector("#sobremesa3");
-const sobremesa3Selected = document.querySelector("#sobremesa3-selected");
-
-const buttonFinish = document.querySelector("#button-finish");
-
-let contadores= [0,0,0]
+ let contadores= [0,0,0]
 
 function selectProduct(option) {
     if (option === 1) {
