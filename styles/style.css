@@ -21,6 +21,7 @@
     width: 412px;
     margin: 0 auto;
     background-color: #E5E5E5;
+    position: relative;
 }
 
 #header {
@@ -138,4 +139,20 @@
     border-radius: 50px;
 
     background-color: green;
+}
+
+#body-bonus {
+    background-color: rgba(255, 255, 255, 0.822);
+    position: absolute;
+    top: 0;
+    right: 0;
+    height: 800px;
+    width: 412px;
+    
+}
+#modal-bonus {
+    background-color: green;
+    width: 262px;
+    height: 262px;
+
 }

@@ -143,10 +143,17 @@ function selectProduct(option) {
     }
 }
 
+
+   
+
+
 function finishOrder() {
+ 
+    let clientName = prompt(`Digite seu nome:`)
+    let adress = prompt(`Digite seu endereço:`)
     valorTotal = (valorPrato + valorBebida + valorSobremesa).toFixed(2);
 
-    mensagemWhatsapp = `Olá, gostaria de fazer o pedido: \n - Prato: ${prato} - R$${valorPrato.toFixed(2)} \n - Bebida: ${bebida} - R$${valorBebida.toFixed(2)} \n - Sobremesa: ${sobremesa} - R$${valorSobremesa.toFixed(2)} \n Total: R$ ${valorTotal}`;
+    mensagemWhatsapp = `Olá, gostaria de fazer o pedido: \n - Prato: ${prato} - R$${valorPrato.toFixed(2)} \n - Bebida: ${bebida} - R$${valorBebida.toFixed(2)} \n - Sobremesa: ${sobremesa} - R$${valorSobremesa.toFixed(2)} \n Total: R$ ${valorTotal}\n\n Nome: ${clientName}\n Endereço: ${adress}`;
 
     mensagemWhatsapp = encodeURIComponent(mensagemWhatsapp);
   
