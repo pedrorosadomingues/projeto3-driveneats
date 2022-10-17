@@ -7,6 +7,15 @@
 .hidden {
     display: none;
 }
+.visible {
+    display: block;
+}
+
+
+
+.pointer:hover {
+    cursor: pointer;
+}
 
 #body-container {
     width: 412px;
@@ -25,6 +34,8 @@
     width: 412px;
 
     z-index: 2;
+
+    box-shadow: 0 0 10px 0 rgba(0, 0, 0, 0.5);
 }
 
 #main-content {
@@ -72,6 +83,8 @@
     margin-left: 10px;
 
     position: relative;
+
+    box-shadow: 1px 1px 1px 1px rgba(0, 0, 0, 0.2);
 }
 
 .option h3 {
@@ -107,7 +120,7 @@
     z-index: 2;
 }
 
-#footer button {
+#buttonFinishOff {
     width: 364px;
     height: 61px;
 
@@ -115,4 +128,14 @@
     border-radius: 50px;
 
     background-color: #CBCBCB;
+}
+
+#buttonFinishOn {
+    width: 364px;
+    height: 61px;
+
+    border: none;
+    border-radius: 50px;
+
+    background-color: green;
 }

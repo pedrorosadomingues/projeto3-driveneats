@@ -28,25 +28,25 @@
                     <h2>Primeiro, seu prato</h2>
                 </div>
                 <div class="options-container">
-                    <div id="prato1" class="option" onclick="selectProduct(1)">
+                    <div id="prato1" class="option pointer" onclick="selectProduct(1)">
                         <img src="./images/prato.svg" alt="prato">
                         <h3>Frango Yin Yang</h3>
                         <p>Um pouco de batata, um pouco de salada</p>
                         <p>R$14,90</p>
                         <img id='prato1Selected' class='hidden'src="images/selected.svg" alt="selected">
                     </div>
-                    <div id='prato2' class="option" onclick="selectProduct(2)">
+                    <div id='prato2' class="option pointer" onclick="selectProduct(2)">
                         <img src="./images/prato.svg" alt="prato">
-                        <h3>Frango Yin Yang</h3>
-                        <p>Um pouco de batata, um pouco de salada</p>
-                        <p>R$14,90</p>
+                        <h3>Frango com Limao</h3>
+                        <p>Um pouco de batata, um pouco de limao</p>
+                        <p>R$214,90</p>
                         <img id='prato2Selected' class='hidden'src="images/selected.svg" alt="selected">
                     </div>
-                    <div id='prato3' class="option" onclick="selectProduct(3)">
+                    <div id='prato3' class="option pointer" onclick="selectProduct(3)">
                         <img src="./images/prato.svg" alt="prato">
-                        <h3>Frango Yin Yang</h3>
-                        <p>Um pouco de batata, um pouco de salada</p>
-                        <p>R$14,90</p>
+                        <h3>Frango com Batata</h3>
+                        <p>Um pouco de batata, um pouco de frango</p>
+                        <p>R$314,90</p>
                         <img id='prato3Selected' class='hidden'src="images/selected.svg" alt="selected">
                     </div>
                 </div>
@@ -58,25 +58,25 @@
                     <h2>Agora, sua bebida</h2>
                 </div>
                 <div class="options-container">
-                    <div id="bebida1" class="option" onclick="selectProduct(4)">
+                    <div id="bebida1" class="option pointer" onclick="selectProduct(4)">
                         <img src="./images/bebida.svg" alt="bebida">
                         <h3>Coquinha gelada</h3>
                         <p>Lata 350ml</p>
                         <p>R$ 4,90</p>
                         <img id='bebida1Selected' class='hidden'src="images/selected.svg" alt="selected">
                     </div>
-                    <div id="bebida2" class="option" onclick="selectProduct(5)">
+                    <div id="bebida2" class="option pointer" onclick="selectProduct(5)">
                         <img src="./images/bebida.svg" alt="bebida">
-                        <h3>Coquinha gelada</h3>
+                        <h3>Coquinha zero</h3>
                         <p>Lata 350ml</p>
                         <p>R$ 4,90</p>
                         <img id='bebida2Selected' class='hidden'src="images/selected.svg" alt="selected">
                     </div>
-                    <div id="bebida3" class="option" onclick="selectProduct(6)">
+                    <div id="bebida3" class="option pointer" onclick="selectProduct(6)">
                         <img src="./images/bebida.svg" alt="bebida">
-                        <h3>Coquinha gelada</h3>
-                        <p>Lata 350ml</p>
-                        <p>R$ 4,90</p>
+                        <h3>Coca com álcool</h3>
+                        <p>Copo 500ml</p>
+                        <p>R$ 34,90</p>
                         <img id='bebida3Selected' class='hidden'src="images/selected.svg" alt="selected">
                     </div>
                 </div>
@@ -88,25 +88,25 @@
                     <h2>Por fim, sua sobremesa</h2>
                 </div>
                 <div class="options-container">
-                    <div id="sobremesa1" class="option" onclick="selectProduct(7)">
+                    <div id="sobremesa1" class="option pointer" onclick="selectProduct(7)">
                         <img src="./images/pudim.svg" alt="pudim">
                         <h3>Pudim</h3>
                         <p>Apenas pudim</p>
                         <p>R$ 7,90</p>
                         <img id='sobremesa1Selected' class='hidden'src="images/selected.svg" alt="selected">
                     </div>
-                    <div id="sobremesa2" class="option" onclick="selectProduct(8)">
+                    <div id="sobremesa2" class="option pointer" onclick="selectProduct(8)">
                         <img src="./images/pudim.svg" alt="pudim">
-                        <h3>Pudim</h3>
-                        <p>Apenas pudim</p>
-                        <p>R$ 7,90</p>
+                        <h3>Pudim de leite</h3>
+                        <p>Pudim de leite</p>
+                        <p>R$ 27,90</p>
                         <img id='sobremesa2Selected' class='hidden'src="images/selected.svg" alt="selected">
                     </div>
-                    <div id="sobremesa3" class="option" onclick="selectProduct(9)">
+                    <div id="sobremesa3" class="option pointer" onclick="selectProduct(9)">
                         <img src="./images/pudim.svg" alt="pudim">
-                        <h3>Pudim</h3>
-                        <p>Apenas pudim</p>
-                        <p>R$ 7,90</p>
+                        <h3>Pudim com coco</h3>
+                        <p>Pudim com coco</p>
+                        <p>R$ 37,90</p>
                         <img id='sobremesa3Selected' class='hidden'src="images/selected.svg" alt="selected">
                     </div>
                 </div>
@@ -115,12 +115,15 @@
         </div>
         <!--FIM CONTEUDO PRINCIPAL-->
         <div id="footer">
-            <button id="buttonFinish">
+            <button id="buttonFinishOff">
                 <p>
                     Selecione os 3 itens<br>
                     para fechar o pedido
                 </p>
             </button>
+            <button id="buttonFinishOn" class="hidden pointer" onclick="finishOrder()">
+                <p>Fechar Pedido<p>
+                </button>
         </div>
     </div>
 <script src="script.js"></script>
