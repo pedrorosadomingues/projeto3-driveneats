@@ -2,6 +2,14 @@ let contadores = [0, 0, 0]
 
 let buttonFinishOn = document.querySelector("#buttonFinishOn")
 
+let openModal = document.querySelector("#body-bonus")
+
+let footer = document.querySelector("#footer")
+
+let header = document.querySelector("#header")
+
+let mainContent = document.querySelector("#main-content")
+
 let prato = ``
 
 let bebida = ``
@@ -23,6 +31,8 @@ let valorSobremesa = 0
 let valorTotal = 0
 
 let mensagemWhatsapp = ``
+
+
 
 function selectProduct(option) {
     if (option === 1) {
@@ -117,7 +127,7 @@ function selectProduct(option) {
         sobremesa3.style = "border:none";
         sobremesa3Selected.style = "display: none";
         contadores[2] = 1;
-        sobremesa = `Pudim com leite condensado`
+        sobremesa = `Pudim com leite`
         descricaoSobremesa = `Pudim com leite condensado`
         valorSobremesa = 27.90
 
@@ -139,16 +149,29 @@ function selectProduct(option) {
     if (contadores[0] === 1 && contadores[1] === 1 && contadores[2] === 1) {
         buttonFinishOff.classList.add("hidden");
         buttonFinishOn.classList.remove("hidden");
-       
+
     }
 }
 
+function bonusModal() {
+    openModal.classList.remove("hidden");
+    openModal.classList.add("bonus");
+    footer.classList.add("remove-position");
+    header.classList.add("remove-position");
+    mainContent.classList.add("margin-bonus");
+    nomePratoModal.innerHTML = prato;
+    valorPratoModal.innerHTML = `R$ ${valorPrato.toFixed(2)}`;
+    nomeBebidaModal.innerHTML = bebida;
+    valorBebidaModal.innerHTML = `R$ ${valorBebida.toFixed(2)}`;
+    nomeSobremesaModal.innerHTML = sobremesa;
+    valorSobremesaModal.innerHTML = `R$ ${valorSobremesa.toFixed(2)}`;
+    valorTotalModal.innerHTML = `R$ ${(valorPrato + valorBebida + valorSobremesa).toFixed(2)}`;
+}
 
-   
 
 
 function finishOrder() {
- 
+
     let clientName = prompt(`Digite seu nome:`)
     let adress = prompt(`Digite seu endereço:`)
     valorTotal = (valorPrato + valorBebida + valorSobremesa).toFixed(2);
@@ -156,7 +179,15 @@ function finishOrder() {
     mensagemWhatsapp = `Olá, gostaria de fazer o pedido: \n - Prato: ${prato} - R$${valorPrato.toFixed(2)} \n - Bebida: ${bebida} - R$${valorBebida.toFixed(2)} \n - Sobremesa: ${sobremesa} - R$${valorSobremesa.toFixed(2)} \n Total: R$ ${valorTotal}\n\n Nome: ${clientName}\n Endereço: ${adress}`;
 
     mensagemWhatsapp = encodeURIComponent(mensagemWhatsapp);
-  
+
 
     window.open(`https://wa.me/5561998648575?text=${mensagemWhatsapp}`);
+}
+
+
+function closeModal() {
+    openModal.classList.add("hidden");
+    footer.classList.remove("remove-position");
+    header.classList.remove("remove-position");
+    mainContent.classList.remove("margin-bonus");
 }

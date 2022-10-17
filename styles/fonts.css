@@ -47,3 +47,34 @@
     font-size: 20px;
     color: #FFFFFF;
 }
+
+#modal-title h1 {
+    font-family: 'Roboto', sans-serif;
+    font-weight: 700;
+    font-size: 22px;
+    color: white
+}
+
+#modal-main-content p {
+    font-family: 'Roboto', sans-serif;
+    font-weight: 400;
+    font-size: 22px;
+    line-height: 25px;
+    color: white
+}
+
+#finish-button {
+    font-family: 'Roboto', sans-serif;
+    font-weight: 700;
+    font-size: 22px;
+    color: #50D074;
+    border: none;
+}
+
+#cancel-button {
+    font-family: 'Roboto', sans-serif;
+    font-weight: 700;
+    font-size: 20px;
+    color: white;
+    border: none;
+}

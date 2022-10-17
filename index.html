@@ -13,7 +13,42 @@
 </head>
 
 <body>
+
+
     <div id="body-container">
+        <div id="body-bonus" class="hidden">
+            <div id="modal-bonus">
+                <div id="modal-title">
+                    <h1>Confirme seu pedido</h1>
+                </div>
+                <div id="modal-main-content">
+                    <div id="modal-prato">
+                        <p id="nomePratoModal">Frango</p>
+                        <p id="valorPratoModal">R$10,00</p>
+                    </div>
+                    <div id="modal-bebida">
+                        <p id="nomeBebidaModal">Frango</p>
+                        <p id="valorBebidaModal">R$10,00</p>
+                    </div>
+                    <div id="modal-sobremesa">
+                        <p id="nomeSobremesaModal">Frango</p>
+                        <p id="valorSobremesaModal">R$10,00</p>
+                    </div>
+                    <div id="modal-valor-total">
+                        <p id="nomeTotalModal">Total</p>
+                        <p id="valorTotalModal">R$10,00</p>
+                    </div>
+                </div>
+
+                <div id="modal-finish-button">
+                    <button id="finish-button" class="pointer" onclick="finishOrder()">Tudo certo, pode pedir!</button>
+                </div>
+
+                <div id="modal-cancel-button">
+                    <button id="cancel-button" class="pointer" onclick="closeModal()">Cancelar</button>
+                </div>
+            </div>
+        </div>
         <div id="header">
             <div id="title-container">
                 <h1>DrivenEats</h1>
@@ -121,17 +156,11 @@
                     para fechar o pedido
                 </p>
             </button>
-            <button id="buttonFinishOn" class="hidden pointer" onclick="finishOrder()">
+            <button id="buttonFinishOn" class="hidden pointer" onclick="bonusModal()">
                 <p>Fechar Pedido<p>
                 </button>
         </div>
-        <div id="body-bonus" class="hidden">
-            <div id="modal-bonus">
-                <div id="modal-title">
-                    <h1>Confirme seu pedido</h1>
-                </div>
-            </div>
-        </div>
+       
        
     </div>
 <script src="script.js"></script>

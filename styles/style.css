@@ -5,10 +5,26 @@
 }
 
 .hidden {
-    display: none;
+    display: none !important;
 }
+
 .visible {
     display: block;
+}
+
+.bonus {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+
+.margin-bonus {
+    margin-top: 0px !important;
+    margin-bottom: 0px !important;
+}
+
+.remove-position {
+    position: initial !important;
 }
 
 
@@ -142,17 +158,61 @@
 }
 
 #body-bonus {
-    background-color: rgba(255, 255, 255, 0.822);
-    position: absolute;
-    top: 0;
-    right: 0;
-    height: 800px;
-    width: 412px;
-    
-}
-#modal-bonus {
-    background-color: green;
-    width: 262px;
-    height: 262px;
+    margin: 0 auto;
+    background-color: rgba(253, 255, 250, 0.822);
+    position: fixed;
 
+    height: 1000px;
+    width: 412px;
+
+    z-index: 2;
+
+}
+
+#modal-bonus {
+    background-color: #50D074;
+    width: 377px;
+    height: 353px;
+}
+
+#modal-title {
+
+    height: 76px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+
+#modal-main-content div {
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    padding: 0 26px;
+
+    margin-bottom: 13px;
+}
+
+#modal-finish-button {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    margin-bottom: 13px;
+}
+
+#finish-button {
+    background-color: white;
+    width: 329px;
+    height: 52px;
+    border-radius: 50px;
+}
+
+#modal-cancel-button {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+
+}
+
+#cancel-button {
+    background-color: #50D074;
 }
